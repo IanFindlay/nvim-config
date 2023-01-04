@@ -28,6 +28,9 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
 	['<C-Space>'] = cmp.mapping.complete(),
 })
 
+-- Disable completion with Enter
+cmp_mappings['<CR>'] = nil
+
 lsp.setup_nvim_cmp({
   mapping = cmp_mappings
 })
